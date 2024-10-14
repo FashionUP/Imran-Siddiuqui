@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASHION UP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet"> <!-- Additional font -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif; /* Main font */
+            background-color: #FF69B4; /* Hot Pink */
+            color: #FFFFFF; /* White text */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333333; /* Darker shade for the header */
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #222222; /* Slightly lighter black for the section */
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333333;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        h1, h2, h3 {
+            color: #FFFFFF;
+            font-family: 'Lora', serif; /* Lora font for headings */
+        }
+        p {
+            font-size: 16px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .home-section, .about-section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        iframe {
+            border: 0;
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.getElementsByClassName('section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.remove('active');
+            }
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>FASHION UP</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showSection('home-section')">Home</a>
+        <a href="#" onclick="showSection('about-section')">About Us</a>
+        <a href="#" onclick="showSection('contact-section')">Contact</a>
+        <!-- Search Form Link -->
+        <form action="https://www.google.com/search" method="get" style="display:inline-block; margin-left: 15px;">
+            <input type="text" name="q" placeholder="Search Fashion Up" style="padding: 5px;"/>
+            <input type="submit" value="Search" style="padding: 5px 10px;"/>
+        </form>
+    </nav>
+
+    <section id="home-section" class="section active">
+        <h2>Welcome to FASHION UP!</h2>
+        <p>At Fashion Up, we are passionate about providing the latest fashion trends for all ages. Our mission is to offer high-quality clothing that combines style, comfort, and affordability.</p>
+        <img src="https://via.placeholder.com/800x400?text=Fashion+Up+Clothing+Collection" alt="Fashion Collection">
+        <p>We specialize in a wide range of clothing, including casual wear, ethnic wear, formal wear, and trendy accessories. Whether you're looking for the perfect outfit for a casual day out or a special event, Fashion Up has something for everyone!</p>
+        <img src="https://via.placeholder.com/800x400?text=Trendy+Outfits+and+Accessories" alt="Trendy Outfits">
+        <p>Our clothing is carefully selected to match the taste and preferences of our customers, ensuring that we meet the highest standards of fashion excellence.</p>
+    </section>
+
+    <section id="about-section" class="section">
+        <h2>About IMRAN SIDDIQUI</h2>
+        <p>Hello, I'm <strong>Imran Siddiqui</strong>, the owner of Fashion Up. I have always been passionate about fashion and helping people look their best. After years of working in the clothing industry, I started Fashion Up to bring stylish, affordable, and high-quality clothing to my customers.</p>
+        <img src="https://via.placeholder.com/800x400?text=Owner+of+Fashion+Up" alt="Imran Siddiqui">
+        
+        <!-- Additional Details -->
+        <p>Fashion Up is not just a business; it's my vision to revolutionize the fashion industry with trendy, sustainable, and affordable clothing. We take pride in creating apparel that is made with premium materials and crafted with attention to detail, ensuring both durability and comfort.</p>
+        <p>Our product range caters to men, women, and children, offering a vast variety of outfits, from casual daywear to elegant evening wear. We ensure that every customer finds something that suits their personal style.</p>
+        <p>In addition to our brick-and-mortar store, Fashion Up is rapidly expanding its online presence, enabling customers to shop conveniently from anywhere. Stay tuned for new collections and special discounts that will be available exclusively online!</p>
+        <p>We're committed to environmental sustainability and are actively working on introducing eco-friendly fabrics into our product lines. We believe in fashion with a conscience, where looking good does not compromise the well-being of our planet.</p>
+        <p>Thank you for supporting Fashion Up. Together, let's make fashion fun, affordable, and environmentally friendly!</p>
+    </section>
+
+    <section id="contact-section" class="section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to learn more about our products, feel free to reach out!</p>
+        <h3>Contact Information:</h3>
+        <p><strong>Phone/WhatsApp:</strong> <a href="https://wa.me/7318258052" style="color: #FFFFFF;" target="_blank">7318258052</a></p>
+        <p><strong>Location:</strong> Barai Kunda, Pratapgarh</p>
+
+        <!-- Google Map Embed -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28472.2283205429!2d81.88472646675169!3d25.888276627391844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3984b5a1c64b3d01%3A0x7f9c041c246d187e!2sBarai%20Kunda%2C%20Pratapgarh%2C%20Uttar%20Pradesh%2C%20India!5e0!3m2!1sen!2sus!4v1697029389786!5m2!1sen!2sus" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <footer>
+        <p>© 2024 FASHION UP | All rights reserved</p>
+    </footer>
+
+</body>
+</html>
